@@ -1,0 +1,235 @@
+.Nav {
+    height: 60px;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed !important;
+    position: absolute;
+    justify-content: center;
+    font-size: 1rem;
+    top: 0;
+    z-index: 100;
+    color: rgb(229, 180, 180);
+
+}
+
+.Navlink {
+    color: #090909;
+    font-weight: 800;
+    padding: 1rem;
+    /* background-color: red; */
+
+}
+
+.linkuz {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: green;
+}
+
+.Navlinkk {
+    display: none;
+
+}
+
+
+
+.log-me {
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.NavbarContainer {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 24px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+
+}
+
+.NavLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.icon-nav {
+    width: 35px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+.icon-navv {
+    width: 38px;
+    height: 23px;
+    color: rgb(0, 0, 0);
+}
+
+.NavItems {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 32px;
+    padding: 0 6px;
+    list-style: none;
+    /* background-color: red; */
+
+}
+
+
+.ButtonContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 28px;
+    align-items: center;
+    padding: 0 6px;
+    /* background-color: red; */
+
+}
+
+
+
+.Nav-Btn {
+    color: #ffffff;
+    padding: 0.9em 1.2em;
+    font-size: .9rem;
+    font-weight: 400;
+    border-radius: 0.5em;
+    background: #000000;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+}
+
+.Nav-Btn:active {
+    color: #000000;
+    font-weight: 400;
+
+    background-color: white;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+
+
+}
+
+/* //search bar// */
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 30px;
+    height: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    /* padding: 18px 16px; */
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.input::placeholder {
+    color: transparent;
+}
+
+.input:focus::placeholder {
+    color: rgb(255, 254, 254);
+}
+
+.input:focus,
+.input:not(:placeholder-shown) {
+    background-color: #000000;
+    color: rgb(217, 7, 7);
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    padding: 16px 16px 16px 45px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 99px;
+    z-index: -1;
+    fill: rgb(0, 0, 0);
+    border: none;
+}
+
+.input:focus+.icon,
+.input:not(:placeholder-shown)+.icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .input:focus,
+    .input:not(:placeholder-shown) {
+        background-color: #000000;
+        color: white;
+        border: none;
+        width: 100px;
+        cursor: pointer;
+        padding: 18px 16px 18px 45px;
+    }
+
+
+    .ButtonContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Navlink {
+        color: #090909;
+        font-weight: 800;
+        display: none;
+        padding: 0px;
+        /* background-color: red; */
+
+    }
+
+    .Navlinkk {
+        display: flex;
+    }
+
+    .login-user,
+    .Nav-Btn {
+        display: none;
+    }
+
+    .linkuz {
+        font-weight: 500;
+    }
+
+}

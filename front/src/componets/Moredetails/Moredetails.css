@@ -1,0 +1,77 @@
+.imagess {
+    width: 400px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.detailA {
+    /* background-color: rgb(59, 224, 59); */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.detailA h4 {
+    color: brown;
+    /* background-color: #CC8EF5; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+}
+
+.spa {
+    color: rgb(117, 114, 114);
+}
+
+.namme {
+    font-size: 40px;
+
+}
+
+.pricce {
+   
+    font-size: 25px;
+    color: rgb(18, 185, 18);
+}
+
+.more-icon {
+
+    font-size: 30px;
+    color: black;
+}
+.more-icon:hover{
+    color:green;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.BB {
+    /* background-color: aqua; */
+    width: fit-content;
+    gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sizz {
+    background-color: black;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.sizz:hover {
+    background-color: white;
+    color: black;
+}

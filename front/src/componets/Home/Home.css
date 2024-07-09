@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.home {
+   padding: 20px 30px;
+   /* padding-bottom: 200px; */
+   height: fit-content;
+   /* overflow-y: scroll; */
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+}
+
+.Section {
+   max-width: 1400px;
+      display: flex;
+   flex-direction: column;
+   /* background-color: gray; */
+  
+}
+
+.StyledParagraph {
+   font-size: 20px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   font-family: Outfit;
+   color: cornflowerblue;
+}
+
+.StyledParagraph.center {
+   justify-content: center;
+}
+.CardWrapper{
+  
+   display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  
+}
+.CardWrappers{
+   display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+   .home{
+      padding: 20px 12px;
+   }
+}
+@media (max-width: 750px) {
+
+   .CardWrapper{
+      gap: 14px;
+   }
+   .CardWrappers{
+      display: flex;
+     flex-wrap: wrap;
+     gap: 60px;
+     justify-content: center;
+   }
+}

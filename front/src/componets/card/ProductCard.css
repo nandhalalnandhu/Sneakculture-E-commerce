@@ -1,0 +1,142 @@
+.Card {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+}
+
+.StyledMenuItem {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: white;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.ProCard-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 6px;
+    object-fit: contain;
+    transition: all 0.3s ease-out;
+}
+
+.Menu {
+    position: absolute;
+    z-index: 10;
+    color: green;
+    top: 14px;
+    right: 14px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+
+}
+
+.Top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+}
+
+.Top:hover {
+    background-color: #00000066;
+}
+
+.Top:hover .Image {
+    opacity: 0.8;
+}
+
+.Top:hover .Menu {
+    display: flex;
+}
+
+.Rate {
+    position: absolute;
+    z-index: 10;
+    color: greenyellow;
+    bottom: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: white;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.Details {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    padding: 4px 10px;
+}
+
+.Title {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.Desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(89, 89, 92);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(33, 32, 32);
+}
+
+.Price>span {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(62, 101, 11);
+    text-decoration: line-through;
+    text-decoration-color: aqua;
+}
+
+.Percent {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(10, 197, 10);
+}
+
+@media (max-width: 750px) {
+    .Price{
+        font-size: 12px;
+    }
+    .Card {
+        width: 162px;
+       
+    }
+    .Percent {
+        font-size: 10px;
+        font-weight: 500;
+        color: rgb(10, 197, 10);
+    }
+
+    .ProCard-img {
+        width: 160px;
+        object-fit: contain;
+        height: 250px;
+    }
+}

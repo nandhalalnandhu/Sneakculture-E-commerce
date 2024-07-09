@@ -1,0 +1,53 @@
+.filt {
+    display: flex;
+
+    /* Allow items to wrap onto the next line */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 40px;
+    /* Adjust the gap between items */
+    padding: 10px;
+    /* Adjust padding */
+}
+
+.btn-filt {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    /* Adjust padding */
+    text-align: center;
+    /* Center text */
+    width: 150px;
+    /* Set a fixed width for buttons */
+    margin: 5px;
+    /* Adjust margin */
+}
+
+/* Media query for responsiveness */
+
+@media (max-width: 768px) {
+    .filt {
+        display: flex;
+        flex-wrap: wrap;
+        /* display: grid; */
+        /* grid-template-columns: repeat(4,1fr); */
+        /*        
+        flex-direction: column; */
+        /* Stack items vertically */
+        gap: 5px;
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .btn-filt {
+        -color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        /* padding: 5px 0px; */
+        /* Adjust padding */
+        /* width:250px; */
+    }
+}
