@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 dotenv.config();
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://sneakculure.onrender.com" }));
 
 
 const PORT = process.env.PORT || 4000;
